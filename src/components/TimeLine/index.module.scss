@@ -1,0 +1,36 @@
+@import '../../styles/globals';
+
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: $primary-color;
+  border-radius: 8px;
+  color: white;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.milestone {
+  @include card-style;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.month {
+  font-weight: bold;
+  @include responsive-text(2rem, 1.5rem);
+}
+
+.year {
+  font-size: 1rem;
+}
+
+.label {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  @include responsive-text(1rem, 0.85rem);
+}

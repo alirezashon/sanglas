@@ -1,0 +1,32 @@
+@import '../../styles/globals';
+
+.eventCountdown {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: lighten($primary-color, 10%);
+  border-radius: 8px;
+  color: white;
+  margin: 1rem 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.dateBox {
+  text-align: center;
+  @include card-style;
+  margin: 0.5rem;
+}
+
+.number {
+  font-size: 2.5rem;
+  @include responsive-text(2.5rem, 2rem);
+}
+
+.label {
+  font-size: 1rem;
+  @include responsive-text(1rem, 0.85rem);
+}
