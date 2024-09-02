@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <>
       <Header />
-      {/* <Timeline /> */}
-      {/* <EventCountdown /> */}
+      <Timeline />
+      <EventCountdown />
       <Information />
     </>
   )

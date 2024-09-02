@@ -3,23 +3,57 @@
 .timeline {
   display: flex;
   justify-content: space-around;
-  padding: 1rem;
-  background-color: $primary-color;
+  align-items: center;
+  height: 40vh;
+  padding: 2vh;
   border-radius: 8px;
-  color: white;
-
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
   }
 }
 
 .milestone {
+  background-color: $gray-15;
   @include card-style;
   text-align: center;
   margin: 0.5rem;
+  width: 13vw;
+  height: 95%;
+  border-radius: $desktop-card-border;
+  padding: 1vh 3vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
+.circleDate {
+  width: 14vw;
+  height: 14vw;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 -5vh -8vh;
+}
+.firstCircleDate {
+  background-color: $orange;
+}
+.secondCircleDate {
+  background-color: $yellow;
+}
+.thirdCircleDate {
+  background-color: $green;
+}
+.fourthCircleDate {
+  background-color: $blue;
+}
+.dayCounter {
+  height: 98%;
+  width: 33%;
+  border-radius: $desktop-card-border;
+  background-color: $vector;
+}
 .month {
   font-weight: bold;
   @include responsive-text(2rem, 1.5rem);
@@ -33,4 +67,30 @@
   margin-top: 0.5rem;
   font-size: 1rem;
   @include responsive-text(1rem, 0.85rem);
+}
+.dayCounterDetails {
+  position: absolute;
+  right: 1%;
+  width: 32%;
+  display: flex;
+  justify-content: space-around;
+}
+.sissors{
+  position: absolute;
+  right: 13%;
+  margin-top: -12%;
+}
+.dayCounterCircle {
+  margin-top: 22vh;
+  width: 12vh;
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30vh;
+  color: $gray-15;  background-color: $black;
+}
+.dayCounterCircle p{
+  font-weight: bold ;
 }

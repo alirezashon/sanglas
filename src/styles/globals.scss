@@ -1,10 +1,27 @@
-$primary-color: #3498db;
-$secondary-color: #2ecc71;
-$text-color: #333;
-$background-color: #f7f7f7;
-$font-stack: 'Helvetica, sans-serif';
+$gray-15: #f8f8f8;
+$gray-30: #e7e7e7;
+$gray-45: #787878;
+$gray-60: #3f3f3f;
+$gray-75: #272727;
+$brand-40: #efe86589;
+$black-50: #0000008b;
+$black-72: #000000b0;
+$brand-default: #e0c922;
+$hover: #ffed67;
+$vector: #efe865;
+$error: #e6514b;
+$blue: #c1efd3;
+$green: #d0edb5;
+$yellow: #f5ecaa;
+$orange: #ecd7a8;
+$black:#111111;
+$desktop-card-border:48px;
 
-// Mixins
+@font-face {
+  font-family: Gilory;
+  src: url('../../public/font/Gilroy-Medium.ttf');
+}
+
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -12,7 +29,7 @@ $font-stack: 'Helvetica, sans-serif';
 }
 
 @mixin card-style {
-  background-color: $background-color;
+  background-color: $gray-15;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -29,6 +46,8 @@ $font-stack: 'Helvetica, sans-serif';
   width: 100%;
   padding: 16px;
   box-sizing: border-box;
+  font-family: Gilory;
   overflow-x: hidden;
+  color: #111111;
   background-color: #111111;
 }

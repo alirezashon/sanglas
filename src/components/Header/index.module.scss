@@ -2,15 +2,12 @@
   width: 100%;
   height: 93vh;
 }
-.sunglassText,
-.button,
-.container h1,
-.container p {
-  position: absolute;
-}
+
 .sunglassText {
+  position: absolute;
   left: 45%;
   top: 8vh;
+  z-index: 1;
 }
 .image {
   width: 100%;
@@ -18,14 +15,28 @@
   border: 4px #f8f8f8 solid;
   border-radius: 48px;
   object-fit: cover;
+  opacity: 0.7;
 }
-.container h1 {
-  left: 40%;
-  top: 28vh;
+.textBox {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 93vh;
 }
-.container p {
-  left: 40%;
-  top: 38vh;
+.textBox p,
+.textBox h1 {
+  color: #ffffff;
+}
+.textBox h1 {
+  font-weight: bold;
+  font-size: 56px;
+}
+.textBox p{
+  font-size: 32px;
 }
 .button {
   color: #111111;
@@ -35,4 +46,6 @@
   border-radius: 16px;
   left: 45%;
   top: 48vh;
+  font-family: Gilory;
+
 }
