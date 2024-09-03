@@ -1,32 +1,51 @@
 @import '../../styles/globals';
-
-.infoCards {
+.container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  padding: 1rem;
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 18px;
+  padding: 1vh;
+  height: fit-content;
 }
-
-.card {
-  @include card-style;
-  text-align: center;
+.container div {
+  padding: 2vh;
+  border-radius: 48px;
+  background-color: $gray-15;
 }
-
+.inspiration {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 4;
+  grid-row: span 12 / 4;
+}
 .icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 1rem;
+  width: 100%;
+  object-fit: cover;
 }
-
-.title {
-  font-size: 1.25rem;
-  @include responsive-text(1.25rem, 1rem);
+.community {
+  grid-column: span 8;
+  grid-row: span 1;
 }
-
-.description {
-  font-size: 1rem;
-  @include responsive-text(1rem, 0.85rem);
+.imageSection {
+  height: 100%;
+  border: 4px $gray-15 solid;
+  border-radius: 48px;
+  grid-column: span 4;
+  grid-row: span  2;
+}
+.purpose {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+.benefits{
+   grid-column: span  5;
+  grid-row: span 2;
+}
+@media (max-width: 888px) {
+  .container {
+    font-size: 1vh;
+  }
+  .body div {
+    width: 100%;
+  }
 }

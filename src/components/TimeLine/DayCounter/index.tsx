@@ -14,16 +14,21 @@ const DayCounter = () => {
 
   return (
     <div className={styles.dayCounter}>
-      {/* <Image
-        src={'/images/daycounter.svg'}
-        alt=''
-        width={999}
-        height={999}
-        className={styles.dayCounterImage}
-      /> */}
-       <div className={styles.openingDay}>
+      <div className={styles.dayCounterImageContainer}>
+        <Image
+          src={'/images/daycounter.svg'}
+          alt=''
+          width={999}
+          height={999}
+          className={styles.dayCounterImage}
+        />
+      </div>
+      <div className={styles.sissors}>
+        <Sissor />
+      </div>
+      <div className={styles.openingDay}>
         <h1>Opening Day</h1>
-        <div className=''>{remainingDays.currentday}</div>
+        <div className={styles.currentday}>{remainingDays.currentday}</div>
       </div>
       <div className={styles.dayCounterDetails}>
         <div className={styles.dayCounterCircle}>

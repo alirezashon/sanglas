@@ -1,22 +1,22 @@
-import styles from './index.module.scss';
+import Image from 'next/image'
+import styles from './index.module.scss'
 
-const EventCountdown = () => {
+const sources = [
+  '/images/logo.svg',
+  '/images/logo1.svg',
+  '/images/logo2.svg',
+  '/images/logo3.svg',
+]
+const Navigation = () => {
   return (
-    <div className={styles.eventCountdown}>
-      <div className={styles.dateBox}>
-        <div className={styles.number}>1</div>
-        <div className={styles.label}>Year</div>
-      </div>
-      <div className={styles.dateBox}>
-        <div className={styles.number}>7</div>
-        <div className={styles.label}>Months</div>
-      </div>
-      <div className={styles.dateBox}>
-        <div className={styles.number}>24</div>
-        <div className={styles.label}>Days</div>
-      </div>
+    <div className={styles.navigation}>
+      {sources.map((src) => (
+        <div className={styles.logo}>
+          <Image src={src} alt='logo' width={222} height={80} />
+        </div>
+      ))}
     </div>
-  );
-};
+  )
+}
 
-export default EventCountdown;
+export default Navigation

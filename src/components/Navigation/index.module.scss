@@ -1,32 +1,12 @@
 @import '../../styles/globals';
 
-.eventCountdown {
+.navigation{
+  background-color: $gray-75;
+  border-radius: 48px;
   display: flex;
   justify-content: space-around;
-  padding: 1rem;
-  background-color: lighten($gray-15  , 10%);
-  border-radius: 8px;
-  color: white;
-  margin: 1rem 0;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-  }
+  padding: 7px;
 }
+.logo{
 
-.dateBox {
-  text-align: center;
-  @include card-style;
-  margin: 0.5rem;
-}
-
-.number {
-  font-size: 2.5rem;
-  @include responsive-text(2.5rem, 2rem);
-}
-
-.label {
-  font-size: 1rem;
-  @include responsive-text(1rem, 0.85rem);
 }
