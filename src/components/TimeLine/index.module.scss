@@ -48,49 +48,7 @@
 .fourthCircleDate {
   background-color: $blue;
 }
-.dayCounter {
-  height: 98%;
-  width: 33%;
-  border-radius: $desktop-card-border;
-  background-color: $vector;
-}
-.month {
-  font-weight: bold;
-  @include responsive-text(2rem, 1.5rem);
-}
-
-.year {
-  font-size: 1rem;
-}
-
-.label {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  @include responsive-text(1rem, 0.85rem);
-}
-.dayCounterDetails {
-  position: absolute;
-  right: 1%;
-  width: 32%;
-  display: flex;
-  justify-content: space-around;
-}
-.sissors{
-  position: absolute;
-  right: 13%;
-  margin-top: -12%;
-}
-.dayCounterCircle {
-  margin-top: 22vh;
-  width: 12vh;
-  height: 12vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 30vh;
-  color: $gray-15;  background-color: $black;
-}
-.dayCounterCircle p{
-  font-weight: bold ;
+.daycounterBox{
+  width: 40%;
+  height: 100%;
 }

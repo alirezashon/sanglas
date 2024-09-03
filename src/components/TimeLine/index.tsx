@@ -1,8 +1,6 @@
-'use client'
-import Image from 'next/image'
-import { Brick, Hammer, Sissor, Sofa, Structure } from '../Icons'
+import { Brick, Hammer, Sofa, Structure } from '../Icons'
+import DayCounter from './DayCounter'
 import styles from './index.module.scss'
-import { useState } from 'react'
 
 const milestones = [
   { month: 'Jan', year: '2023', label: 'Groundbreaking', icon: <Hammer /> },
@@ -17,12 +15,7 @@ const milestones = [
 ]
 
 const Timeline = () => {
-  const remainingDays = {
-    year: 1,
-    month: 7,
-    day: 30,
-    currentday: '24 Aug 2024',
-  }
+
 
   return (
     <div className={styles.timeline}>
@@ -46,30 +39,9 @@ const Timeline = () => {
           </div>
         </div>
       ))}
-      <Image
-        src={'/images/daycounter.svg'}
-        alt=''
-        width={999}
-        height={999}
-        className={styles.dayCounter}
-      />
-      <div className={styles.sissors}>
-        <Sissor />
-        <div>Opening Day</div>
-      </div>
-      <div className={styles.dayCounterDetails}>
-        <div className={styles.dayCounterCircle}>
-          <p>{remainingDays.year}</p>
-          <p>year</p>
-        </div>
-        <div className={styles.dayCounterCircle}>
-          <p>{remainingDays.month}</p>
-          <p>month</p>
-        </div>
-        <div className={styles.dayCounterCircle}>
-          <p>{remainingDays.year}</p>
-          <p> year</p>
-        </div>
+      <div className={styles.daycounterBox}>
+
+      <DayCounter/>
       </div>
     </div>
   )

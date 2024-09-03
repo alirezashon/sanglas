@@ -1,0 +1,47 @@
+@import '../../../styles/globals';
+.dayCounter {
+  background: url('../../../../public/images/daycounter.svg');
+  background-color: $vector;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 48px;
+  padding: 72px;
+}
+.sissors {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.openingDay{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}.dayCounterDetails {
+  display: flex;
+  width: 100%;
+    justify-content: space-around;
+  align-items: center;
+}
+
+.dayCounterCircle {
+  width: 12vh;
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30vh;
+  padding: 1vh;
+  color: $gray-15;
+  background-color: $black;
+}
+// .remainingValues {
+//   font-size: 64px;
+//   line-height:0;
+// }
+// .remainingLabels {
+//   font-size: 20px;
+// }
