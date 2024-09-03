@@ -1,1 +1,41 @@
-    
+@import '../../styles/globals';
+.floorPlanSection {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.imageSection {
+  text-align: center;
+}
+.map{
+    color: $gray-15;
+   width: 30%;
+   flex-wrap: wrap;
+    background-color: $gray-75;
+    padding:28px ;
+    border-radius: $desktop-card-border;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  gap: 8px;
+}
+
+.label {
+    text-wrap: nowrap;
+    width: fit-content;
+  padding: 10px;
+  border: none;
+  border-radius: 24px;
+  background-color: $gray-90;
+  color: $gray-15;
+  cursor: pointer;
+  transition: background-color 0.3s ease
+}
+
+.activeButton {
+    border:2px solid $brand-default ;
+    background-color: $vector-40;
+}
