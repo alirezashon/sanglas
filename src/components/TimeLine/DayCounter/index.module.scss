@@ -49,16 +49,20 @@
   height: 14vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   border-radius: 30vh;
   padding: 1vh;
   color: $gray-15;
   background-color: $gray-90;
 }
-// .remainingValues {
-//   font-size: 64px;
-//   line-height:0;
-// }
-// .remainingLabels {
-//   font-size: 20px;
-// }
+.remainingValues {
+  font-size: 64px;
+  margin: 0;
+  line-height: 1;
+}
+.remainingLabels {
+  line-height: 1;
+  margin: 0;
+  font-size: 20px;
+}

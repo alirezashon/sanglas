@@ -48,6 +48,11 @@
 .fourthCircleDate {
   background-color: $blue;
 }
+.month,.year{
+  font-size: 64px;
+  line-height: 1;
+  margin: 0;
+}
 .daycounterBox{
   width: 40%;
   height: 100%;
