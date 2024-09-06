@@ -6,6 +6,7 @@ import Header from '@/components/Header'
 import Navigation from '@/components/Navigation'
 import FloorPlan from '@/components/FloorPlan'
 import Gallery from '@/components/Gallery'
+import Footer from '@/components/Footer'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Information />
       <FloorPlan/>
       <Gallery/>
+      <Footer/>
     </div>
     </>
   )

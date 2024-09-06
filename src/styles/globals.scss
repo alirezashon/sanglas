@@ -16,7 +16,7 @@ $blue: #c1efd3;
 $green: #d0edb5;
 $yellow: #f5ecaa;
 $orange: #ecd7a8;
-$desktop-card-border: 48px;
+$desktop-card-border-radius: 48px;
 
 @font-face {
   font-family: Gilory;
@@ -49,6 +49,14 @@ $desktop-card-border: 48px;
   box-sizing: border-box;
   font-family: Gilory;
   overflow-x: hidden;
-  color: #111111;
-  background-color: #111111;
+  color: $gray-90;
+  background-color: $gray-90;
+  button {
+    color: $gray-90;
+    background-color: $brand-default;
+    border: none;
+    border-radius: 16px;
+    font-family: Gilory;
+    font-weight: bold;
+  }
 }

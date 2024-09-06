@@ -13,47 +13,50 @@ const Gallery = () => {
     { src: '/images/main.svg', title: 'Aerial View' },
   ]
 
-  const handleImageClick = (index: number) => {
-    setSelectedImageIndex(index)
-  }
-
   return (
     <div className={styles.galleryContainer}>
-      <div className={styles.topSection}>
-        <h2 className={styles.imageTitle}>
-          {images[selectedImageIndex].title}
-        </h2>
-        <div className={styles.mainImage}>
-          <Image
-            width={1111}
-            height={1111}
-            className={styles.images}
-            src={images[selectedImageIndex].src}
-            alt={images[selectedImageIndex].title}
-          />
+        <div className={styles.titleBox}>
+          <div className={styles.title}>
+            <div
+              className='previous'
+              onClick={() => setSelectedImageIndex(selectedImageIndex - 1)}
+            >
+              {'<'}
+            </div>
+            <h2 className={styles.imageTitle}>
+              {images[selectedImageIndex].title}
+            </h2>
+            <div
+              className='next'
+              onClick={() => setSelectedImageIndex(selectedImageIndex + 1)}
+              aria-disabled
+            >
+              {'>'}
+            </div>
+          </div>
         </div>
-      </div>
+        <Image
+          width={1111}
+          height={1111}
+          className={styles.image}
+          src={images[selectedImageIndex].src}
+          alt={images[selectedImageIndex].title}
+        />
 
       <div className={styles.bottomSection}>
-        <div className={styles.thumbnails}>
           {images.map((image, index) => (
-            <div
+            <Image
               key={index}
               className={`${styles.thumbnail} ${
                 index === selectedImageIndex ? styles.selected : ''
               }`}
-              onClick={() => handleImageClick(index)}
-            >
-              <Image
-                width={111}
-                height={111}
-                className={styles.thumbnailImage}
-                src={image.src}
-                alt={image.title}
-              />
-            </div>
+              onClick={() => setSelectedImageIndex(index)}
+              width={111}
+              height={111}
+              src={image.src}
+              alt={image.title}
+            />
           ))}
-        </div>
       </div>
     </div>
   )

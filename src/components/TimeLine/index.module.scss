@@ -20,7 +20,7 @@
   margin: 0.5rem;
   width: 13vw;
   height: 95%;
-  border-radius: $desktop-card-border;
+  border-radius: $desktop-card-border-radius;
   padding: 1vh 3vh;
   overflow: hidden;
   display: flex;
@@ -48,12 +48,13 @@
 .fourthCircleDate {
   background-color: $blue;
 }
-.month,.year{
-  font-size: 64px;
-  line-height: 1;
-  margin: 0;
+.year {
+  font-size: 24px;
 }
-.daycounterBox{
+.month {
+  font-size: 64px;
+}
+.daycounterBox {
   width: 40%;
   height: 100%;
 }
