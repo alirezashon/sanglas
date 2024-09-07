@@ -6,12 +6,23 @@ import Image from 'next/image'
 const Gallery = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0)
   const images = [
-    { src: '/images/dart.svg', title: 'Parking Area' },
-    { src: '/images/fire.svg', title: 'Garden Area' },
-    { src: '/images/main.svg', title: 'Interior View' },
-    { src: '/images/thinker.svg', title: 'Front View' },
-    { src: '/images/main.svg', title: 'Aerial View' },
+    { src: '/images/Gallery/g1.svg', title: 'Football Field 1' },
+    { src: '/images/Gallery/g2.svg', title: 'Football Field 2' },
+    { src: '/images/Gallery/g3.svg', title: 'Tennis & Beach Volleyball Court' },
+    { src: '/images/Gallery/g4.svg', title: 'Restaurant' },
+    { src: '/images/Gallery/g5.svg', title: 'Restaurant' },
+    { src: '/images/Gallery/g6.svg', title: 'Entrance Area' },
+    { src: '/images/Gallery/g7.svg', title: 'Parking Area' },
+    { src: '/images/Gallery/g8.svg', title: ' Bird’s View' },
+    { src: '/images/Gallery/g9.svg', title: ' Bird’s View' },
   ]
+  
+  
+  
+  
+  
+ 
+ 
 
   return (
     <div className={styles.galleryContainer}>

@@ -1,3 +1,4 @@
+@import '../../styles/globals';
 .footer {
   background-color: #212121;
   padding: 20px;
@@ -90,8 +91,12 @@
           border: none;
           margin-right: 10px;
           font-size: 14px;
+          background: $gray-90;
+          color: $gray-15;
         }
-
+        input::placeholder{
+          color: $gray-15;
+        }
         button {
           padding: 8px 16px;
           background-color: #fdd835;
