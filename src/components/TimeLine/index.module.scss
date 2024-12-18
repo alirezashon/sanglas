@@ -58,3 +58,43 @@
   width: 40%;
   height: 100%;
 }
+
+
+
+
+
+
+
+
+
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40vh;
+  padding: 2vh;
+  border-radius: 8px;
+}
+
+.milestone {
+  background-color: gray;
+  text-align: center;
+  margin: 0.5rem;
+  width: 13vw;
+  height: 95%;
+  border-radius: 4vh;
+  padding: 1vh 3vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.circleDate {
+  width: 14vw;
+  height: 14vw;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 -5vh -8vh;
+}
